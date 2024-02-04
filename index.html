@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentines</title>
+  <script>
+    function handleNo() {
+      document.getElementById("math-question").style.display = 'inline';
+
+      setTimeout(function() {
+        document.getElementById("no-choice").style.display = 'inline';
+      }, 5000)
+    }
+  </script>
+</head>
+<body>
+  <img class="cat-meme" src="cats.gif" alt="cat">
+  <div class="title">Will you be my valentine?</div>
+  <div class="btn-container">
+    <a href="./yes.html"><button id="yes" class="Yes">Yes</button></a>
+    <button id="no" onclick="handleNo()" class="No">No</button>
+  </div>
+  <div id="math-question" class="math-question">
+    <div>You clicked No :/ To prove you're human, solve the following math question. You have 5 seconds.</div>
+    <img class="math" src="math.jpg" alt="math">
+    <div></div>
+    <div id="no-choice" class="no-choice">Time's up! I guess you have no other choice but to say yes :)</div>
+  </div>
+</body>
+</html>
